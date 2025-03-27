@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <title>My Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onclick="PlayAudio()">
+
+    <header class="header">
+        <a href="#home" class="logo">My Happy <span>birthday</span> 🎂</a>
+
+        <nav class="navbar">
+            <a href="#home">INICIO</a>
+            <a href="#education">DETALLES</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hola yo soy <span> Carlos</span></h1>
+            <h3 class="text-animation">Te invito a mi <span></span></h3>
+            
+            <div class="contenedor" id="AbrirContenedor">
+                <div class="superior"></div>
+                <div class="mensaje">
+                    Quedas tu amig@ mio cordialmente invitado a mi cumpleaños y pasar un buen rato entre amigos miestras celebramos un dia especial, tan especial como tu para mi, tu 
+                    mejor regalo es tu precencia para mi en este dia. No Faltes!!!.
+                    <p>Atte: Charly</p>
+                </div>
+                <div class="carta"><i class='bx bxs-cake'></i></div>
+            </div>
+
+
+            <div class="btn-group">
+                <a class="btn" id="Abrir">Abrir</a>
+                <a class="btn" id="Cerrar">Cerrar</a>
+
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="imagenes/g2.gif" alt="">
+        </div>
+
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Deta<span>lles</span></h2>
+
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">FECHA - HORA - LUGAR</div>
+                    <div class="timeline-content">
+                        <p>La Fecha programada es el 18 de abril a horas 18:00 PM, en la discoteca AMNECIA que se encuentra en al ceja El Alto Av. 6 de Marzo - Calle Jorge Carrasco, entre la calle 1 y 2, esta en el 3er Piso </p>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">UBICAION GOGLE MAPS</div>
+                    <div class="timeline-content">
+                        <img src="imagenes/ubicacion.JPG" alt="">
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">LINK DE LA UBICACION</div>
+                    <div class="timeline-content">
+                        <h3>https://maps.app.goo.gl/n8CCJWgQMPi7YbVD6?g_st=aw</h3>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        
+
+        <ul class="list">
+            <li>
+                <a href="#home">Inicio</a>
+            </li>
+            <li>
+                <a href="#education">Detalles</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            @ Carlos Ariel | Happy Birthday
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <audio id="music1" loop>
+        <source src="musica/the beatles - helter skelter.mp3" type="audio/mp4">
+    </audio>
+
+    <script>
+        function PlayAudio(){
+                document.getElementById("music1").play();
+        }
+    </script>
+
+    
+</body>
+</html>
